@@ -4,7 +4,11 @@
  * @param {Object} object
  * @returns {string[]}
  */
-export const keys = (object) => {};
+export const keys = (object) => {
+return Object.values(object).reduce((accum, item) => {
+    return item
+})
+};
 
 /**
  * Принимает объект, возвращает массив значений объекта. Также без использования
