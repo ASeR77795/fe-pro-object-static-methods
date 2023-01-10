@@ -5,8 +5,9 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
+  let arr = [];
+
   for (let key in object) {
-    let arr = [];
     arr.push(key);
   }
   return arr;
