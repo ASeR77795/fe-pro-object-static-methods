@@ -21,9 +21,12 @@ export const keys = (object) => {
  */
 export const values = (object) => {
   let arr = [];
-  for (let key in object) {
-    arr.push(object[key]);
+  for (let item of object) {
+    arr.push(item);
   }
+  //   for (let key in object) {
+  //     arr.push(object[key]);
+  //   }
   return arr;
   //   return Object.values(object);
 };
