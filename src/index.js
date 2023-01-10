@@ -4,12 +4,12 @@
  * @param {Object} object
  * @returns {string[]}
  */
-let arr = [];
 export const keys = (object) => {
   for (let key in object) {
-    key;
+    let arr = [];
+    arr.push(key);
   }
-  return arr.push(key);
+  return arr;
   //   return Object.keys(object);
 };
 
