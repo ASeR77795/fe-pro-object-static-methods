@@ -5,7 +5,7 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
-  return Object.values(object);
+  return Object.keys(object);
 };
 
 /**
@@ -14,14 +14,18 @@ export const keys = (object) => {
  * @param {Object} object
  * @returns {any[]}
  */
-export const values = (object) => {};
+export const values = (object) => {
+  return Object.values(object);
+};
 
 /**
  * Принимаем объект, возвращаем энтри. Все также без методов, используем цикл
  * @param {Object} object
  * @returns {[string, any][]}
  */
-export const entries = (object) => {};
+export const entries = (object) => {
+  return Object.entries(object);
+};
 
 /**
  * Тут наоборот, мы должны сделать из энтри объект обратно) Можете погуглить
