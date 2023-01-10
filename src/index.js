@@ -6,7 +6,7 @@
  */
 export const keys = (object) => {
   for (let key in object) {
-    return key;
+    key;
   }
   //   return Object.keys(object);
 };
@@ -19,7 +19,7 @@ export const keys = (object) => {
  */
 export const values = (object) => {
   for (let key in object) {
-    return object[key];
+    object[key];
   }
   //   return Object.values(object);
 };
