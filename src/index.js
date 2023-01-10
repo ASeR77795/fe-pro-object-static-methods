@@ -4,8 +4,9 @@
  * @param {Object} object
  * @returns {string[]}
  */
+let key;
 export const keys = (object) => {
-  for (let key in object);
+  for (key in object);
   return key;
   //   return Object.keys(object);
 };
