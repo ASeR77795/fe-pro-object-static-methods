@@ -33,4 +33,6 @@ export const entries = (object) => {
  * @param {[string, any][]} entries
  * @returns {Object}
  */
-export const fromEntries = (entries) => {};
+export const fromEntries = (entries) => {
+  return Object.fromEntries(entries);
+};
