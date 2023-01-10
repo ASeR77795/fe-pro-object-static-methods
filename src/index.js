@@ -24,7 +24,7 @@ export const values = (object) => {
   for (let key in object) {
     arr.push(object[key]);
   }
-
+  return arr;
   //   return Object.values(object);
 };
 
@@ -38,6 +38,7 @@ export const entries = (object) => {
   for (let key in object) {
     arr.push(key + object[key]);
   }
+  return arr;
   //   return Object.entries(object);
 };
 
