@@ -6,7 +6,6 @@
  */
 export const keys = (object) => {
   let arr = [];
-
   for (let key in object) {
     arr.push(key);
   }
@@ -21,8 +20,9 @@ export const keys = (object) => {
  * @returns {any[]}
  */
 export const values = (object) => {
+  let arr = [];
   for (let key in object) {
-    return object[key];
+    arr.push(object[key]);
   }
 
   //   return Object.values(object);
@@ -34,7 +34,11 @@ export const values = (object) => {
  * @returns {[string, any][]}
  */
 export const entries = (object) => {
-  return Object.entries(object);
+  let arr = [];
+  for (let key in object) {
+    arr.push(key + object[key]);
+  }
+  //   return Object.entries(object);
 };
 
 /**
