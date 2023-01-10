@@ -8,7 +8,7 @@ export const keys = (object) => {
   for (let key in object) {
     key;
   }
-  return;
+  return keys;
   //   return Object.keys(object);
 };
 
