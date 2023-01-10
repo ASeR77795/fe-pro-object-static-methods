@@ -5,9 +5,7 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
-  for (let keys in object) {
-    return keys;
-  }
+  for (let key in object) key;
 
   //   return Object.keys(object);
 };
