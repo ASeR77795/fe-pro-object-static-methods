@@ -5,7 +5,10 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
-  return Object.keys(object);
+  for (let key in object) {
+    return key;
+  }
+  //   return Object.keys(object);
 };
 
 /**
@@ -15,7 +18,10 @@ export const keys = (object) => {
  * @returns {any[]}
  */
 export const values = (object) => {
-  return Object.values(object);
+  for (let key in object) {
+    return object[key];
+  }
+  //   return Object.values(object);
 };
 
 /**
