@@ -6,7 +6,7 @@
  */
 export const keys = (object) => {
   for (let key in object);
-  return object.key;
+  return key;
   //   return Object.keys(object);
 };
 
