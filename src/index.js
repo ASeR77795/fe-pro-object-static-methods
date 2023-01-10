@@ -5,8 +5,8 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
-  for (let key in object) {
-    key;
+  for (let keys in object) {
+    return keys;
   }
   //   return Object.keys(object);
 };
@@ -18,8 +18,8 @@ export const keys = (object) => {
  * @returns {any[]}
  */
 export const values = (object) => {
-  for (let key in object) {
-    object[key];
+  for (let values in object) {
+    return object[values];
   }
   //   return Object.values(object);
 };
