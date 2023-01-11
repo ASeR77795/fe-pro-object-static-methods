@@ -35,8 +35,8 @@ export const values = (object) => {
  */
 export const entries = (object) => {
   let arr = [];
-  for (let [key, value] in object) {
-    arr.push(key, object[value]);
+  for (let key in object) {
+    arr.push(key, object[key]);
   }
   return arr;
   //   return Object.entries(object);
