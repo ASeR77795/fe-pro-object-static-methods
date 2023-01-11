@@ -49,5 +49,11 @@ export const entries = (object) => {
  * @returns {Object}
  */
 export const fromEntries = (entries) => {
-  return Object.fromEntries(entries);
+  let result = {};
+  for (let key in entries) {
+    result[entries[key][0]] = entries[key][1];
+  }
+
+  return result;
+  // return Object.fromEntries(entries);
 };
