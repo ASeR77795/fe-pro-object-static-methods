@@ -50,7 +50,7 @@ export const entries = (object) => {
  */
 export const fromEntries = (entries) => {
   let result = {};
-  for (let key in entries) { 
+  for (let key in entries) {
     const value = entries[key];
     result[value[0]] = value[1];
   }
@@ -58,4 +58,3 @@ export const fromEntries = (entries) => {
   return result;
   // return Object.fromEntries(entries);
 };
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
